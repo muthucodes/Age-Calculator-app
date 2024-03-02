@@ -1,0 +1,181 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  display: block;
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #151515;
+  overflow-x: hidden;
+}
+
+.red {
+  color: #ff5959;
+}
+
+.age-calculator {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.age-calculator .container {
+  background-color: #ffffff;
+  min-width: 84rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5.6rem;
+  border-radius: 2.4rem 2.4rem 20rem 2.4rem;
+}
+.age-calculator .container form {
+  display: flex;
+  flex-direction: column;
+}
+.age-calculator .container form .inputs {
+  display: flex;
+  gap: 3.2rem;
+  align-items: start;
+}
+.age-calculator .container form .inputs .input-group {
+  max-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: 0.25rem;
+  color: #716f6f;
+  text-transform: uppercase;
+}
+.age-calculator .container form .inputs .input-group .warning {
+  color: #ff5959;
+  letter-spacing: 0.8px;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.age-calculator .container form .inputs .input-group .input-field {
+  height: 7.2rem;
+  padding: 1.2rem 2.4rem;
+  border: 1px solid #716f6f;
+  outline: none;
+  border-radius: 0.8rem;
+  line-height: 48px;
+  font-size: 3.2rem;
+  color: #151515;
+  letter-spacing: 0.01rem;
+}
+.age-calculator .container form .inputs .input-group .input-field::-webkit-outer-spin-button, .age-calculator .container form .inputs .input-group .input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.age-calculator .container form .inputs .input-group .input-field[type=number] {
+  -moz-appearance: textfield;
+}
+.age-calculator .container form .inputs .input-group .input-field::placeholder {
+  opacity: 0.5;
+}
+.age-calculator .container form .inputs .input-group .input-field:focus {
+  border: 2px solid #854dff;
+}
+.age-calculator .container form .full-warning {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 21px;
+  /* identical to box height */
+  color: #ff5959;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.age-calculator .container form .btn-and-line {
+  display: flex;
+  align-items: center;
+}
+.age-calculator .container form .btn-and-line hr {
+  flex-grow: 1;
+}
+.age-calculator .container form .btn-and-line .btn {
+  border-radius: 50%;
+  width: 9.6rem;
+  height: 9.6rem;
+  display: grid;
+  place-items: center;
+  background-color: #854dff;
+  border: none;
+}
+.age-calculator .container form .btn-and-line .btn:hover {
+  background-color: #151515;
+  cursor: pointer;
+}
+.age-calculator .container .calculated-age {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 104px;
+  line-height: 110%;
+  /* or 114px */
+  letter-spacing: -0.02em;
+  color: #151515;
+}
+.age-calculator .container .calculated-age .calculated-years,
+.age-calculator .container .calculated-age .calculated-months,
+.age-calculator .container .calculated-age .calculated-days {
+  color: #854dff;
+}
+
+/*# sourceMappingURL=main.css.map */

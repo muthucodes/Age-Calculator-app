@@ -1,0 +1,158 @@
+@import "reset";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+$black: #151515;
+$purple: #854dff;
+$white: #ffffff;
+$grey: #716f6f;
+$line: #dcdcdc;
+$red: #ff5959;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: $black;
+  overflow-x: hidden;
+}
+
+.red {
+  color: $red;
+}
+.age-calculator {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  .container {
+    background-color: $white;
+    min-width: 84rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5.6rem;
+    border-radius: 2.4rem 2.4rem 20rem 2.4rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      .inputs {
+        display: flex;
+        gap: 3.2rem;
+        align-items: start;
+
+        .input-group {
+          max-width: 18rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+
+          font-weight: 700;
+          font-size: 1.4rem;
+          line-height: 21px;
+          /* identical to box height */
+
+          letter-spacing: 0.25rem;
+          color: $grey;
+          text-transform: uppercase;
+
+          .warning {
+            color: $red;
+            letter-spacing: 0.8px;
+            font-size: 1.4rem;
+            text-transform: capitalize;
+          }
+          .input-field {
+            height: 7.2rem;
+            padding: 1.2rem 2.4rem;
+            border: 1px solid $grey;
+            outline: none;
+            border-radius: 0.8rem;
+            line-height: 48px;
+            font-size: 3.2rem;
+            color: #151515;
+            letter-spacing: 0.01rem;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+            &[type="number"] {
+              -moz-appearance: textfield;
+            }
+            &::placeholder {
+              opacity: 0.5;
+            }
+
+            &:focus {
+              border: 2px solid $purple;
+            }
+          }
+        }
+      }
+
+      .full-warning {
+        margin-top: 2rem;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 21px;
+        /* identical to box height */
+
+        color: $red;
+        letter-spacing: 0.5px;
+        font-size: 1.5rem;
+        font-style: italic;
+      }
+
+      .btn-and-line {
+        display: flex;
+        align-items: center;
+
+        hr {
+          flex-grow: 1;
+        }
+
+        .btn {
+          border-radius: 50%;
+          width: 9.6rem;
+          height: 9.6rem;
+          display: grid;
+          place-items: center;
+          background-color: $purple;
+          border: none;
+
+          &:hover {
+            background-color: $black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .calculated-age {
+      font-style: italic;
+      font-weight: 800;
+      font-size: 104px;
+      line-height: 110%;
+      /* or 114px */
+
+      letter-spacing: -0.02em;
+      color: $black;
+
+      .calculated-years,
+      .calculated-months,
+      .calculated-days {
+        color: $purple;
+      }
+    }
+  }
+}

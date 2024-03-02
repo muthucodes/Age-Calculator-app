@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <section class="age-calculator">
+      <div class="container">
+        <form action="" class="form" novalidate>
+          <div class="inputs">
+            <div class="input-group input-group-day">
+              <label class="day-label">DAY</label>
+              <input
+                type="number"
+                placeholder="DD"
+                name="day"
+                class="input-field input-field-day"
+                step="1"
+              />
+            </div>
+
+            <div class="input-group input-group-month">
+              <label class="month-label">MONTH</label>
+              <input
+                type="number"
+                placeholder="MM"
+                name="month"
+                class="input-field input-field-month"
+                step="1"
+              />
+            </div>
+
+            <div class="input-group input-group-year">
+              <label class="year-label">YEAR</label>
+              <input
+                type="number"
+                placeholder="YYYY"
+                name="year"
+                class="input-field input-field-year"
+                step="1"
+              />
+            </div>
+          </div>
+
+          <div class="btn-and-line">
+            <hr class="line" />
+            <button class="btn" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="44"
+                viewBox="0 0 46 44"
+              >
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <div class="calculated-age">
+          <div class="years">
+            <p><span class="calculated-years">--</span> years</p>
+          </div>
+          <div class="months">
+            <p><span class="calculated-months">--</span> months</p>
+          </div>
+          <div class="days">
+            <p><span class="calculated-days">--</span> days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
